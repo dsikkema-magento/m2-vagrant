@@ -1,5 +1,9 @@
 #!/usr/bin/env bash
 
+#Setup aliases
+cp /vagrant/.bash_aliases /root
+cp /vagrant/.bash_aliases /home/vagrant
+
 apt-get update
 add-apt-repository ppa:ondrej/php5-5.6
 apt-get -y update
