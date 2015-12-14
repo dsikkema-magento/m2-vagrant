@@ -1,1 +1,4 @@
 .vagrant/
+log
+m2/
+m2ee/
