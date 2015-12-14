@@ -1258,3 +1258,28 @@ I: Connected to client. :-)
 <- run -i 33
 Log closed at 2015-12-14 19:00:06
 
+Log opened at 2015-12-14 19:09:01
+I: Connecting to configured address/port: 10.0.2.2:10123.
+I: Connected to client. :-)
+-> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="http://xdebug.org/dbgp/xdebug" fileuri="dbgp://stdin" language="PHP" protocol_version="1.0" appid="3018" idekey="debugit"><engine version="2.3.2"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[http://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2015 by Derick Rethans]]></copyright></init>
+
+<- feature_set -i 1 -n show_hidden -v 1
+-> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="http://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="1" feature="show_hidden" success="1"></response>
+
+<- feature_set -i 2 -n max_depth -v 1
+-> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="http://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="2" feature="max_depth" success="1"></response>
+
+<- feature_set -i 3 -n max_children -v 100
+-> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="http://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="3" feature="max_children" success="1"></response>
+
+<- status -i 4
+-> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="http://xdebug.org/dbgp/xdebug" command="status" transaction_id="4" status="starting" reason="ok"></response>
+
+<- step_into -i 5
+-> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="http://xdebug.org/dbgp/xdebug" command="step_into" transaction_id="5" status="stopping" reason="ok"></response>
+
+<- eval -i 6 -- aXNzZXQoJF9TRVJWRVJbJ1BIUF9JREVfQ09ORklHJ10p
+-> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="http://xdebug.org/dbgp/xdebug" command="eval" transaction_id="6"><error code="5"><message><![CDATA[command is not available]]></message></error></response>
+
+Log closed at 2015-12-14 19:09:01
+

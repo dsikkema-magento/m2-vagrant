@@ -1,1 +1,0 @@
-{"nfs":{"/vagrant":{"type":"nfs","linux__nfs_options":["no_root_squash"],"map_uid":0,"map_gid":0,"guestpath":"/vagrant","hostpath":"/Users/dsikkema/home/vagrant/magento","disabled":false,"nfs_udp":true,"nfs_version":3,"uuid":"1297561014"}}}
