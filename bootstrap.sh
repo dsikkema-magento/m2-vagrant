@@ -3,7 +3,7 @@
 #Setup aliases
 cp /vagrant/.bash_aliases /root
 cp /vagrant/.bash_aliases /home/vagrant
-
+. /vagrant/.bash_aliases
 apt-get update
 add-apt-repository ppa:ondrej/php5-5.6
 apt-get -y update
@@ -12,6 +12,8 @@ apt-get install -y apache2
 # Setup the apache server for two urls for the magento application
 rm -rf /var/www/html
 ln -fs /vagrant/m2 /var/www/html
+mkdir m2
+mkdir m2ee
 
 cp /vagrant/m2.dev.conf /etc/apache2/sites-available/m2.dev.conf
 a2ensite m2.dev
