@@ -2,12 +2,12 @@
 
 ## Plugin dependencies
 [Vagrant Plugins](https://www.vagrantup.com/docs/plugins/usage.html)
-vagrant-berkshelf (4.1.0)
-vagrant-hostmanager (1.6.1)
-vagrant-hostsupdater (1.0.1)
-vagrant-omnibus (1.4.1)
-vagrant-share (1.1.4, system)
-vagrant-vbox-snapshot (0.0.9)
+ * vagrant-berkshelf (4.1.0)
+ * vagrant-hostmanager (1.6.1)
+ * vagrant-hostsupdater (1.0.1)
+ * vagrant-omnibus (1.4.1)
+ * vagrant-share (1.1.4, system)
+ * vagrant-vbox-snapshot (0.0.9)
 
 ## Start the vagrant box
 
