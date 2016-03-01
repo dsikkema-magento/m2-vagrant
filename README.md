@@ -1,5 +1,14 @@
 # Magento 2, LAMP on vagrant
 
+## Plugin dependencies
+[Vagrant Plugins](https://www.vagrantup.com/docs/plugins/usage.html)
+vagrant-berkshelf (4.1.0)
+vagrant-hostmanager (1.6.1)
+vagrant-hostsupdater (1.0.1)
+vagrant-omnibus (1.4.1)
+vagrant-share (1.1.4, system)
+vagrant-vbox-snapshot (0.0.9)
+
 ## Start the vagrant box
 
 1. place ce repo in "m2" and ee in "m2ee" in the root of this repo. Those files will be ignored by this git repository, and (like all other files in this repository) will map to "/vagrant/m2" and "/vagrant/m2ee".
