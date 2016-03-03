@@ -2,6 +2,7 @@ alias m2link='php -f /vagrant/m2ee/dev/tools/build-ee.php -- --command link --ce
 alias m2unlink='php -f /vagrant/m2ee/dev/tools/build-ee.php -- --command unlink --ce-source /vagrant/m2 --ee-source /vagrant/m2ee'
 alias m2relink='m2unlink;m2link'
 alias rein='. reinstall.sh'
+alias installm2='bin/magento setup:install --backend-frontname="backend" --db-host="127.0.0.1" --db-name="magento" --db-user="root" --db-password="vagrant" --base-url="http://m2.dev/" --admin-user="admin" --admin-password="password1" --admin-firstname="FN" --admin-lastname="LN" --admin-email="fLN@magento.com" --cleanup-database'
 alias rmv='rm -rf var/*; rm -rf /var/lib/php5/sessions/*'
 alias rmp='rm -rf pub/static/*'
 alias rmv='rm -rf var/*'

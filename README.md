@@ -18,8 +18,8 @@
 
 ## Run Magento CE
 
-1. go to mysql (user root, password vagrant) and create database "magento."
-2. Once in the vagrant box, go to "/vagrant/m2" and enter "rein" (which is an alias to execute reinstall.sh) to install the application.
+1. Once in the vagrant box, go to "/vagrant/m2" and enter 'composer install'
+2. Run "installm2" (which is an alias to install magento described in .bash\_aliases) to install the application.
 
 Visit m2.dev in your host machine to browse magento. The backend is m2.dev/backend.
 
@@ -30,8 +30,11 @@ password1
 ## Run Magento EE
 
 1. go to /vagrant/m2
-2. set up database like in CE
+2. set up database like in CE (or use same one!)
 3. run `m2relink` (an alias for the symlinking script) to define symlinks inside vagrant to the EE codebase
-4. `cp /vagrant/m2ee/composer.lock /vagrant/m2 `
-5. `rein`
+4. `cp /vagrant/m2ee/composer.lock /vagrant/m2 && composer install`
+5. `installm2`
 
+## INFO
+ * MySQL login: root
+ * MySQL password: vagrant
