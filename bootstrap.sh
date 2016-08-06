@@ -1,8 +1,6 @@
 #!/usr/bin/env bash
 
 #Setup aliases
-cp /vagrant/.bash_aliases /root
-cp /vagrant/.bash_aliases /home/vagrant
 . /vagrant/.bash_aliases
 apt-get update
 add-apt-repository ppa:ondrej/php5-5.6
@@ -44,4 +42,6 @@ mv composer.phar /usr/local/bin/composer
 
 
 echo ". ~/custom-bach/bashrx\n" >> ~/.bashrc
+echo >> ~/.bashrc ; echo '. /vagrant/.bash_aliases' >> ~/.bashrc
+echo >> /root/.bashrc ; echo '. /vagrant/.bash_aliases' >> /root/.bashrc
 
