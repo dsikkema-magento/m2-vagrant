@@ -43,5 +43,7 @@ mv composer.phar /usr/local/bin/composer
 
 echo ". ~/custom-bach/bashrx\n" >> ~/.bashrc
 echo >> ~/.bashrc ; echo '. /vagrant/.bash_aliases' >> ~/.bashrc
+echo >> ~/.bashrc ; echo 'mag' >> ~/.bashrc
+
 echo >> /root/.bashrc ; echo '. /vagrant/.bash_aliases' >> /root/.bashrc
 
